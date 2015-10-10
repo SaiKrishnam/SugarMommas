@@ -1,0 +1,66 @@
+.form-group{
+width:20%;
+}
+
+#bday{
+width:150px;
+}
+
+
+#line{
+color:black;
+}
+
+.container{
+margin-top: 15px;
+
+}
+.row input{
+height:20px;
+}
+
+.navbar{
+height: 140px;
+background-color:#F5F5F5;
+margin-bottom:0px;
+}
+#menuOptions{
+list-style-type:none;
+}
+
+ul#menuOptions a{
+float:left;
+color:black;
+width:120px;
+text-decoration:none;
+font-size:22px;
+padding: 0.2em 0.6em;
+margin-top:50px;
+}
+
+#logo{
+height:50px;
+width:200px;
+margin-left:140px;
+}
+#back{
+position:relative;
+width:100%;
+position-left:0px;
+opacity:0.5;
+z-index:-4;
+}
+#thisForm{
+position:relative;
+top:-1200px;
+z-index:2
+}
+#onTop{
+position:relative;
+top:-660px;
+width:800px;
+height:600px;
+z-index:-2;
+background-color:black;
+opacity:0.3;
+}

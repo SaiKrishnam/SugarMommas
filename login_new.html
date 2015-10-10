@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="">
+<script src=""></script>
+	<style>
+	
+	.form-control{
+	height:35px;
+	}
+    .form-group{
+	height:50px
+	}
+	.input-fields{
+	width:200px;
+	}
+	
+	#pac-input{
+	width:400px;
+	}
+    
+	#form{
+		
+	}
+	</style>
+</head>
+
+<body>
+
+<div id="bckground">
+</div>
+
+<form role="form" id="form">
+  <div class="form-group">
+    <label for="usr">Username:</label>
+    <input type="username" class="form-control input-fields" id="usr">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control input-fields" id="pwd">
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control input-fields" id="email">
+  </div>
+  
+ 
+  
+  <div class="form-group">
+  <p><b>Address</b></p>
+  <input id="pac-input" class="auto-address form-control " type="text" placeholder="Enter your address">
+  </div>
+  
+  <div class="form-group">
+   <div>
+   <p><b>Gender</b></p>
+   </div>
+  <div class="radio-inline">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+Male</label>
+</div>
+<div class="radio-inline">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+Female</label>
+</div>
+ </div>
+ 
+ <div class="form-group">
+ <p><b>Birthday</b></p>
+<input type="date" class="form-control input-fields" placeholder="Text input">
+ </div>
+
+   <div class="form-group">
+   <div>
+   <p><b>I am a : </b></p>
+   </div>
+  <div class="radio-inline">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+	Survivor</label>
+  </div>
+	<div class="radio-inline">
+	  <label>
+		<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+	Fighter</label>
+	</div>
+  </div>
+  
+ <div class="form-group ">
+ <p><b>Year Diagnosed</b></p>
+ <input type="number" class="form-control input-fields" placeholder="Year">
+ </div>
+ 
+
+ 
+ 
+  </form>
+  
+  
+  
+  
+<script>
+// This example adds a search box to a map, using the Google Place Autocomplete
+// feature. People can enter geographical searches. The search box will return a
+// pick list containing a mix of places and predicted search terms.
+
+function initAutocomplete() {
+  // Create the search box and link it to the UI element.
+  var input = document.getElementById('pac-input');
+  var searchBox = new google.maps.places.SearchBox(input);
+  searchBox.addListener('places_changed',function(){
+			/*var resultsArray = searchBox.getPlaces();
+			var loc = resultsArray[0].geometry.location;
+			var lat = resultsArray[0].geometry.location.lat();
+			var lng = resultsArray[0].geometry.location.lng();
+			var locObject = {lat:lat , lng:lng};
+			console.log(locObject);
+		    localStorage.setItem('userEntry',JSON.stringify(locObject) );
+			parent.location = 'mapDisplay.html'; */
+});
+ 
+}
+
+
+</script>
+  
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9GLrorUY8X7RNG4rGH6_q5LbdNifsWUw&libraries=places&callback=initAutocomplete"
+         async defer></script>
+
+</body>
+</html>
